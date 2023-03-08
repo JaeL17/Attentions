@@ -39,7 +39,7 @@ class multi_head_attention(nn.Module):
     MultiHead(Q, K, V) = Concat(head1, ..., head_h)W^O
     where head_i = Attention(QW_{i}^{Q}, KW_{i}^{K}, VW_{i}^{V})
     
-    # exployed h = 8 parallel attention layers, or heads. For each of these we use d_k=d_v=d_model/h = 64.
+    # employed h = 8 parallel attention layers, or heads. For each of these we use d_k=d_v=d_model/h = 64.
     
     Inputs: query, key, value, mask
     Outputs: context_vec, attention_dist 
